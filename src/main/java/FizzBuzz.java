@@ -26,7 +26,7 @@ public class FizzBuzz {
         //Count through 100 numbers
         for (int i = 1; i < 100; i++) {
 
-            //Create a new String output
+            //Create a new String builder instance
             output = new StringBuilder();
 
             //Iterate through each comparable
