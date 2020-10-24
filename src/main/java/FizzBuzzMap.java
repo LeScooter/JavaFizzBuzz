@@ -32,6 +32,8 @@ public class FizzBuzzMap {
 
             //Iterate through each entry in the fb test map
             for (Map.Entry<Integer, String> entry : FIZZ_BUZZ_TESTS.entrySet()) {
+
+                //Append entry value to output if value is a multiplication
                 output.append(i % entry.getKey() == 0 ? entry.getValue() : "");
             }
 

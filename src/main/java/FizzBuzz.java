@@ -31,7 +31,7 @@ public class FizzBuzz {
 
             //Iterate through each comparable
             for (FizzBuzzTest fbTest : FIZZ_BUZZ_TESTS) {
-                output.append(fbTest.compare(i));
+                output.append(fbTest.process(i));
             }
 
             //Output number if String value is empty
@@ -54,7 +54,7 @@ public class FizzBuzz {
          * Default Constructor for a Fizz Buzz Test
          *
          * @param multipleNumber - Given number to compare
-         * @param string - Given {@link String} value to append
+         * @param string         - Given {@link String} value to append
          */
         public FizzBuzzTest(final int multipleNumber, final String string) {
             this.multipleNumber = multipleNumber;
@@ -68,7 +68,7 @@ public class FizzBuzz {
          * @param value - Given value to check for multiplication
          * @return - Returns the String value if proper condition is met
          */
-        public String compare(final int value) {
+        public String process(final int value) {
             //Return String if it's a multiple of, else, return empty
             return (value % this.multipleNumber == 0 ? this.string : "");
         }
